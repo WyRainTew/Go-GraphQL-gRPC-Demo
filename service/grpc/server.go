@@ -36,6 +36,7 @@ func (s *UserServer) GetUserInfo(ctx context.Context, req *pb.UserInfoRequest) (
 	}
 
 	// 构建响应
+
 	return &pb.UserInfoResponse{
 		Id:   user.ID,
 		Name: user.Name,
