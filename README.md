@@ -31,7 +31,7 @@
 ## 功能
 
 - 查询用户信息: `userInfo(userId: String!): User`
-- 用户数据包含: id, name, age, sex
+- 用户数据包含: id、 name、age、sex
 
 ## 快速开始
 
@@ -122,21 +122,21 @@ go run main.go -db=./mydb.db -grpc=:50052 -http=:8081
 
 ```
 Demo/
-├── main.go                 # 主程序
+├── main.go                 主程序
 ├── service/
-│   ├── database/           # 数据库层
-│   │   └── database.go     # SQLite数据库操作
-│   ├── grpc/               # gRPC 服务
-│   │   ├── server.go       # gRPC服务器实现
-│   │   ├── user.proto      # Protocol Buffers定义
-│   │   └── pb/             # 生成的 protobuf 代码
-│   └── graphql/            # GraphQL API
-│       ├── resolver.go     # GraphQL解析器
-│       ├── server.go       # GraphQL HTTP服务器
-│       └── static/         # 静态资源
-│           └── playground.html  # GraphQL Playground界面
-├── go.mod                  # Go模块定义
-└── go.sum                  # 依赖校验和
+│   ├── database/           数据库层
+│   │   └── database.go     SQLite数据库操作
+│   ├── grpc/               gRPC 服务
+│   │   ├── server.go       gRPC服务器实现
+│   │   ├── user.proto      Protocol Buffers定义
+│   │   └── pb/             生成的 protobuf 代码
+│   └── graphql/            GraphQL API
+│       ├── resolver.go     GraphQL解析器
+│       ├── server.go       GraphQL HTTP服务器
+│       └── static/         静态资源
+│           └── playground.html  GraphQL Playground界面
+├── go.mod                  Go模块定义
+└── go.sum                  依赖校验和
 ```
 
 ## 流程说明
