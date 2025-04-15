@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"Demo/service/database"
-	"Demo/service/graphql"
-	grpcServer "Demo/service/grpc"
+	"Demo/internal/database"
+	"Demo/internal/graphql"
+	grpcServer "Demo/internal/grpc"
 )
 
 func main() {
@@ -80,4 +80,4 @@ func main() {
 	server.Stop()
 	
 	log.Println("所有服务已关闭")
-}
+} 
