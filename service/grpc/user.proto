@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package grpc;
+
+option go_package = "Demo/service/grpc/pb";
+
+// 用户服务定义
+service UserService {
+  // 获取用户信息
+  rpc GetUserInfo(UserInfoRequest) returns (UserInfoResponse) {}
+}
+
+// 获取用户信息请求
+message UserInfoRequest {
+  string user_id = 1;
+}
+
+// 用户信息
+message UserInfoResponse {
+  string id = 1;
+  string name = 2;
+  int32 age = 3;
+  string sex = 4;
+}
