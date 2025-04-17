@@ -70,14 +70,14 @@ func main() {
 	<-quit
 
 	log.Println("正在关闭服务...")
-	
+
 	// 关闭 GraphQL 服务器
 	if err := graphqlServer.Stop(); err != nil {
 		log.Printf("关闭 GraphQL 服务器出错: %v", err)
 	}
-	
+
 	// 关闭 gRPC 服务器
 	server.Stop()
-	
+
 	log.Println("所有服务已关闭")
-} 
+}
